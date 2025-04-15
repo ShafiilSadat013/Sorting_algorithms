@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    int swapCount=0;
     int n;
     cin >> n;
     int arr[n];
@@ -18,6 +19,7 @@ int main()
                 int temp = arr[j];
                 arr[j] =  arr[j+1];
                 arr[j+1] = temp;
+                swapCount++;
             }
         }
     }
@@ -27,5 +29,6 @@ int main()
     }
 
     cout << endl;
+    cout << "Total swaps :" << swapCount << endl;
     return 0;
 }
